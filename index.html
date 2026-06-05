@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html><head lang="ru"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Продажа билетов</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/ticketsmain.css">
+
+</head>
+<!-- <body class="is-preload left-sidebar"> -->
+<body class="homepage">
+	<div id="preloader" style="opacity: 0; display: none;">
+		<div class="spinner"></div>
+	</div>
+	<div id="page-wrapper">
+	<!-- Header -->
+		<div id="header-wrapper">
+			<header id="header" class="container">
+				<div id="logo">
+					<h1><a>Продажа билетов</a></h1>
+					
+				</div>
+				<nav id="nav">
+					<ul>
+						<li style="white-space: nowrap;"><a href="./login.html">Вход</a></li>
+						<li style="white-space: nowrap;"><a href="./new.html">Регистрация</a></li>
+					</ul>
+					
+				</nav>
+			</header>
+		</div>
+
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div class="container">
+				<div class="row gtr-200">
+					<div class="col-8 col-12-medium imp-medium">
+						<div id="content">
+							<div>
+								<!-- Вход не выполнен -->
+								<div><div>
+    <p>Вам нужно выполнить <a href="./login.html">Вход в систему</a>
+    </p>
+    <p>Если вы еще не зарегистрированы, то выполните <a href="./new.html">Регистрацию</a>
+    </p>
+
+</div></div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<footer id="footer" class="container">
+				<div class="row">
+					<div class="col-12">
+						<div id="copyright">
+							<ul class="menu">
+								<li>© 2026, Настя Цыганок</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery.dropotron.min.js"></script>
+	<script type="text/javascript" src="./assets/js/browser.min.js"></script>
+	<script type="text/javascript" src="./assets/js/breakpoints.min.js"></script>
+	<script type="text/javascript" src="./assets/js/util.js"></script>
+	<script type="text/javascript" src="./assets/js/ticketmain.js"></script><div id="navToggle"><a href="#navPanel" class="toggle"></a></div><div id="navPanel"><nav><a class="link depth-0" href="./login.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>Вход</a><a class="link depth-0" href="./new.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>Регистрация</a></nav></div>
+
+	<script type="text/javascript">
+		window.addEventListener('load', function()
+		{	const preloader = document.getElementById('preloader');
+			preloader.style.opacity = '0';
+
+			// Удаляем элемент из DOM после завершения анимации исчезновения
+			setTimeout(
+				function()
+				{	preloader.style.display = 'none';
+				}, 500);
+		});
+	</script>
+
+</body></html>
