@@ -1,10 +1,10 @@
 <!DOCTYPE html> <html>
 <head lang=ru><meta charset=utf-8>
 <title>Продажа билетов</title>
-<meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name=viewport content="width=devie-width, initial-scale=1, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="../assets/css/ticketsmain.css" />
-<link rel=canonical href=./></head>
+</head>
 <!-- <body class="is-preload left-sidebar"> -->
 <body class=homepage>
  <div id=preloader style=opacity:0;display:none>
@@ -23,16 +23,17 @@
  <nav id=nav>
  
  <ul>
- <li style=white-space:nowrap><a href=../login.html>Выход</a></li>
+ <li style=white-space:nowrap><a href=../logout>Выход</a></li>
  <li style=white-space:nowrap><a href=./index.html>Главная</a></li>
  <li class=opener style=user-select:none;cursor:pointer;white-space:nowrap><a href=#>Личный кабинет</a>
  
-	 <ul>
+ 	 <ul>
 		<li style=white-space:nowrap><a href="./setpass.html">Изменить пароль</a></li>
 		<li style=white-space:nowrap><a href="./mytickets.html">Мои билеты</a></li>
-	 </ul>
-  </li>
-  </ul>
+ 
+ </ul></li>
+ 
+ </ul>
  </nav>
  </header>
  </div>
@@ -52,58 +53,25 @@
  
  <div><div>
  <div class=containeer>
- <div class="row col-md-10">
- <h2>Расписание поездов</h2>
- </div>
- <div class=table-container>
- <thread>
- </thread><table>
- <tbody><tr>
- <th><a class=sorted href="./index.html?sort=nomer">Номер</a></th>
- <th><a class="sorted sorted-asc" href="./index.html?sort=datetime,desc">Отправление</a></th>
- <th><a class=sorted href="./index.html?sort=marshrut">Маршрут</a>
- <form id=frmSel role=form action=/>
- <input class=findtext id=find name=find value type=text>
- </form>
- </th>
- <th>Плацкарт</th>
- <th>Купе</th>
- <th>Общиих</th>
- <th>Спальных</th>
- <th>Сидячих</th>
- <th>Операции</th>
- </tr>
+ <h2>Смена пароля <span>user@mail.test</span></h2>
+ <form method=get role=form action=./index.html>
  
- <tbody>
- <tr>
- <td>55</td>
- <td>06.06.2026 18:46</td>
- <td>Брест - Минск</td>
- <td>52</td>
- <td>36</td>
- <td>0</td>
- <td>0</td>
- <td>0</td>
- <td>
- <div style=display:flex;justify-content:space-between>
- <div><a href="./ticket.html?uid=18">[Купить билет]</a>&nbsp;</div>
+ <div>
+ <label class=form-label>Старый пароль:</label>
+ <input id=oldpass name=oldpass placeholder="Введите старый пароль" type=password>
  </div>
- </td>
- </tr>
- </tbody>
- </table>
+ <div>
+ <label class=form-label>Новый пароль:</label>
+ <input id=newpass1 name=newpass1 placeholder="Введите пароль" type=password>
  </div>
- <br>
- <div class=row>
- <div class=col-sm-6>
- <div>Показано с 1 по 1 из 1 результатов</div>
+ <div>
+ <label class=form-label>Повторите пароль:</label>
+ <input id=newpass2 name=newpass2 placeholder="Повторите пароль" type=password>
  </div>
- <div class=col-sm-6>
- <nav class=pull-right>
- <ul class=pagination><li class="disabled page-item"><span class=page-link><span aria-hidden=true>«</span></span><li class="disabled page-item"><span class=page-link><span aria-hidden=true>‹</span></span><li class="active page-item"><span class=page-link>1<span class="sr-only visually-hidden">(current)</span></span><li class="disabled page-item"><span class=page-link><span aria-hidden=true>›</span></span><li class="disabled page-item"><span class=page-link><span aria-hidden=true>»</span></span></ul>
- </nav>
+ <div>
+ <button type=submit>Установить пароль</button>
  </div>
- </div>
+ </form>
  </div>
 </div></div>
  </div>

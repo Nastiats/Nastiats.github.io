@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="../assets/css/ticketsmain.css" />
-<link rel=canonical href=./></head>
+</head>
 <!-- <body class="is-preload left-sidebar"> -->
 <body class=homepage>
  <div id=preloader style=opacity:0;display:none>
@@ -27,12 +27,15 @@
  <li style=white-space:nowrap><a href=./index.html>Главная</a></li>
  <li class=opener style=user-select:none;cursor:pointer;white-space:nowrap><a href=#>Личный кабинет</a>
  
-	 <ul>
+ 
+ 	 <ul>
 		<li style=white-space:nowrap><a href="./setpass.html">Изменить пароль</a></li>
 		<li style=white-space:nowrap><a href="./mytickets.html">Мои билеты</a></li>
-	 </ul>
-  </li>
-  </ul>
+ 
+ 
+ </ul></li>
+ 
+ </ul>
  </nav>
  </header>
  </div>
@@ -53,56 +56,25 @@
  <div><div>
  <div class=containeer>
  <div class="row col-md-10">
- <h2>Расписание поездов</h2>
- </div>
- <div class=table-container>
- <thread>
- </thread><table>
- <tbody><tr>
- <th><a class=sorted href="./index.html?sort=nomer">Номер</a></th>
- <th><a class="sorted sorted-asc" href="./index.html?sort=datetime,desc">Отправление</a></th>
- <th><a class=sorted href="./index.html?sort=marshrut">Маршрут</a>
- <form id=frmSel role=form action=/>
- <input class=findtext id=find name=find value type=text>
- </form>
- </th>
- <th>Плацкарт</th>
- <th>Купе</th>
- <th>Общиих</th>
- <th>Спальных</th>
- <th>Сидячих</th>
- <th>Операции</th>
- </tr>
- 
- <tbody>
- <tr>
- <td>55</td>
- <td>06.06.2026 18:46</td>
- <td>Брест - Минск</td>
- <td>52</td>
- <td>36</td>
- <td>0</td>
- <td>0</td>
- <td>0</td>
- <td>
- <div style=display:flex;justify-content:space-between>
- <div><a href="./ticket.html?uid=18">[Купить билет]</a>&nbsp;</div>
- </div>
- </td>
- </tr>
- </tbody>
- </table>
- </div>
+ <h2>Покупка билета. Укажите еоличество билетов:</h2>
+ Поезд № <span>55</span>&nbsp;
+ <span>06.06.2026 18:46</span><br>
+ <span>Брест - Минск</span>
  <br>
- <div class=row>
- <div class=col-sm-6>
- <div>Показано с 1 по 1 из 1 результатов</div>
+ Вагон № <span>1</span>&nbsp;(<span>Плацкарт</span>)<br>
+ Доступно мест: <span>52</span> по цене: <span>5.00</span>
+ <br>
+ <form method=get role=form action=../500.html>
+ 
+ 
+ <div>
+ <label class=form-label>Количество билетов:</label>
+ <input id=cnt name=cnt type=text value>
  </div>
- <div class=col-sm-6>
- <nav class=pull-right>
- <ul class=pagination><li class="disabled page-item"><span class=page-link><span aria-hidden=true>«</span></span><li class="disabled page-item"><span class=page-link><span aria-hidden=true>‹</span></span><li class="active page-item"><span class=page-link>1<span class="sr-only visually-hidden">(current)</span></span><li class="disabled page-item"><span class=page-link><span aria-hidden=true>›</span></span><li class="disabled page-item"><span class=page-link><span aria-hidden=true>»</span></span></ul>
- </nav>
+ <div>
+ <button type=submit>Купить</button>&nbsp;
  </div>
+ </form>
  </div>
  </div>
 </div></div>

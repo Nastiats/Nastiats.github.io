@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="../assets/css/ticketsmain.css" />
-<link rel=canonical href=./></head>
+</head>
 <!-- <body class="is-preload left-sidebar"> -->
 <body class=homepage>
  <div id=preloader style=opacity:0;display:none>
@@ -26,13 +26,11 @@
  <li style=white-space:nowrap><a href=../login.html>Выход</a></li>
  <li style=white-space:nowrap><a href=./index.html>Главная</a></li>
  <li class=opener style=user-select:none;cursor:pointer;white-space:nowrap><a href=#>Личный кабинет</a>
- 
-	 <ul>
+ 	 <ul>
 		<li style=white-space:nowrap><a href="./setpass.html">Изменить пароль</a></li>
 		<li style=white-space:nowrap><a href="./mytickets.html">Мои билеты</a></li>
-	 </ul>
-  </li>
-  </ul>
+ </ul></li>
+ </ul>
  </nav>
  </header>
  </div>
@@ -51,44 +49,47 @@
  </div>
  
  <div><div>
- <div class=containeer>
  <div class="row col-md-10">
- <h2>Расписание поездов</h2>
- </div>
+ <h2>Мои билеты</h2>
  <div class=table-container>
  <thread>
  </thread><table>
  <tbody><tr>
- <th><a class=sorted href="./index.html?sort=nomer">Номер</a></th>
- <th><a class="sorted sorted-asc" href="./index.html?sort=datetime,desc">Отправление</a></th>
- <th><a class=sorted href="./index.html?sort=marshrut">Маршрут</a>
- <form id=frmSel role=form action=/>
- <input class=findtext id=find name=find value type=text>
- </form>
- </th>
- <th>Плацкарт</th>
- <th>Купе</th>
- <th>Общиих</th>
- <th>Спальных</th>
- <th>Сидячих</th>
- <th>Операции</th>
+ <th><a class="sorted sorted-asc" href=./mytickets.html?sort=datetime,desc">Дата отправления</a></th>
+ <th><a class=sorted href="./mytickets.html?sort=nomer">Номер поезда и направление</a></th>
+ <th>Вагон</th>
+ <th>Количество мест</th>
+ <th>Цена места</th>
  </tr>
  
  <tbody>
  <tr>
- <td>55</td>
- <td>06.06.2026 18:46</td>
- <td>Брест - Минск</td>
- <td>52</td>
- <td>36</td>
- <td>0</td>
- <td>0</td>
- <td>0</td>
- <td>
- <div style=display:flex;justify-content:space-between>
- <div><a href="./ticket.html?uid=18">[Купить билет]</a>&nbsp;</div>
- </div>
- </td>
+ <td>17.05.2026 18:13</td>
+ <td><span>1</span>&nbsp;<span>Брест - Минск</span></td>
+ <td><span>1</span>(<span>Плацкарт</span>)</td>
+ <td>2</td>
+ <td>5.00</td>
+ </tr>
+ <tr>
+ <td>20.05.2026 19:10</td>
+ <td><span>7</span>&nbsp;<span>Брест - Минск</span></td>
+ <td><span>2</span>(<span>Купе</span>)</td>
+ <td>1</td>
+ <td>5.00</td>
+ </tr>
+ <tr>
+ <td>20.05.2026 19:10</td>
+ <td><span>7</span>&nbsp;<span>Брест - Минск</span></td>
+ <td><span>1</span>(<span>Плацкарт</span>)</td>
+ <td>2</td>
+ <td>5.00</td>
+ </tr>
+ <tr>
+ <td>20.05.2026 19:10</td>
+ <td><span>7</span>&nbsp;<span>Брест - Минск</span></td>
+ <td><span>2</span>(<span>Купе</span>)</td>
+ <td>1</td>
+ <td>5.00</td>
  </tr>
  </tbody>
  </table>
@@ -96,7 +97,7 @@
  <br>
  <div class=row>
  <div class=col-sm-6>
- <div>Показано с 1 по 1 из 1 результатов</div>
+ <div>Показано с 1 по 4 из 4 результатов</div>
  </div>
  <div class=col-sm-6>
  <nav class=pull-right>
